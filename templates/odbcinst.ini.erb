@@ -1,0 +1,7 @@
+[FreeTDS]
+Description = FreeTDS
+Driver = /usr/lib/odbc/libtdsodbc.so
+Setup = /usr/lib/odbc/libtdsS.so
+FileUsage = <%= scope.lookupvar('php5_mssql::file_usage') %>
+CPTimeout = <%= scope.lookupvar('php5_mssql::cp_timeout') %>
+CPReuse = <%= scope.lookupvar('php5_mssql::cp_reuse') %>
