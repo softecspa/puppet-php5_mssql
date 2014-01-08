@@ -6,7 +6,7 @@ class php5_mssql::install {
     ensure  => 'pin'
   }
 
-  package { $php5_mssql::params::php5_packages :
+  package { $php5_mssql::params::packages :
     ensure  => present
   }
 }
