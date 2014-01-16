@@ -54,12 +54,12 @@
 #   Felice Pizzurro <felice.pizzurro@softecspa.it>
 #
 define php5_mssql::database (
-  $host       = '',
-  $port       = '',
-  $tds_version= '8.0',
-  $db_name    = '',
-  description = '',
-  servername,
+  $host        = '',
+  $port        = '',
+  $tds_version = '8.0',
+  $db_name     = '',
+  $description = '',
+  $servername,
 
 ) {
 
