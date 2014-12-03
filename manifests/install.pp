@@ -2,9 +2,7 @@ class php5_mssql::install {
 
   include php5_mssql::params
 
-  php5::module { $php5_mssql::params::php5_modules :
-    ensure  => 'pin'
-  }
+  softec_php::extension { $php5_mssql::params::php5_modules :}
 
   package { $php5_mssql::params::packages :
     ensure  => present
